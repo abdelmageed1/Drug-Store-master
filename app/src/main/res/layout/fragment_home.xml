@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/photoProfile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile"
+                    app:shapeAppearanceOverlay="@style/shape_PhotoProfile" />
+
+                <TextView
+                    android:id="@+id/home_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="88dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start|center_vertical"
+                    android:text="Sponge Bob"
+                    android:textColor="@color/head_txt"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/cart_icon"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/ic_baseline_shopping_cart_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/sliderAds"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_below="@id/header_layout"
+                android:layout_alignParentStart="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ads"
+                app:shapeAppearanceOverlay="@style/shape_PhotoAds" />
+
+            <TextView
+                android:id="@+id/tv_Category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sliderAds"
+                android:text="Category :"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_Category"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@id/tv_Category"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tv_MyFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycle_Category"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="My Favorite :"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_MyFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@id/tv_MyFavorite"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

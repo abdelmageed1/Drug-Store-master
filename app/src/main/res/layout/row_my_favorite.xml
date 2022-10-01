@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    android:layout_height="170dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/row_Order_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="35dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo_profile_sponge_bob" />
+
+        <TextView
+            android:id="@+id/row_favorite_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="7dp"
+
+            android:layout_toEndOf="@id/row_Order_img"
+            android:text=" Product Name "
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/row_favorite_tn_description"
+            android:layout_width="307dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/row_favorite_tv_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="6dp"
+
+
+            android:layout_marginEnd="-11dp"
+            android:layout_marginBottom="40dp"
+            android:layout_toEndOf="@id/row_Order_img"
+            android:lines="2"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btn_row_remove_fa"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_bg"
+            android:text="Remove"
+            android:textAllCaps="true"
+
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

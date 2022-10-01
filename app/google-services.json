@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "595402360393",
+    "project_id": "drug-store-e8a55",
+    "storage_bucket": "drug-store-e8a55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595402360393:android:e661235d239ed2699ea198",
+        "android_client_info": {
+          "package_name": "com.kotlinlearn.drugstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595402360393-g4u4v33v7ek0tp8vudvsugl596np7kg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkCj3-VkmE46mz7Xq96ZtTT3q6FPDCpUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595402360393-g4u4v33v7ek0tp8vudvsugl596np7kg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
